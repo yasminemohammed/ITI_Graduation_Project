@@ -1,0 +1,10 @@
+.proimg {
+    cursor: pointer;
+}
+
+.proimg img {
+    height: 300px;
+}
+a {
+    text-decoration: none;
+}
