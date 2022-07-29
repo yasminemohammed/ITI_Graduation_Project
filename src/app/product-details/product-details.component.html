@@ -1,0 +1,20 @@
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img [src]="productDetails?.image" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{ productDetails?.title }}</h5>
+                <p class="card-title">{{ productDetails?.description }}</p>
+                <h6 class="card-text">{{ productDetails?.category }}</h6>
+                <!-- <p class="card-text">{{ productDetails?.price | currency: " EGP" }}</p> -->
+                <p class="card-text">
+                    <small class="text-muted">{{ productDetails?.price | currency: " EGP" }}</small>
+                </p>
+                <a href="#" class="btn btn-success mx-2">Back</a>
+                <a [routerLink]="" class="btn btn-primary">Add to cart</a>
+            </div>
+        </div>
+    </div>
+</div>

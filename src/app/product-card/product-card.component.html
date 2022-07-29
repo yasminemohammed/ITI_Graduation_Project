@@ -1,0 +1,21 @@
+<div class="card proimg h-100">
+    <a [routerLink]="['details', product.id]">
+        <img [src]="product.image" class="card-img-top" alt="..." />
+    </a>
+    <div class="card-body">
+        <h5 class="card-title">{{ product.title }}</h5>
+        <p class="card-text">{{ product.category }}</p>
+        <!-- <p class="card-text" [ngClass]="{'text-success':  product.rating.count  > 0}">{{ product.rating.count | count }}</p> -->
+        <!-- <h5 class="card-text" [ngStyle]="{'color':  product.rating.count  > 0? 'green': 'red'}">{{ product.rating.count | count }}</h5> -->
+        <p class="card-text d-none">{{ product.id }}</p>        <!--display none for product id-->
+        <p class="card-text">{{ product.price | currency: " EGP" }}</p>
+        <a [routerLink]="['details', product.id]" class="btn btn-success mx-2">View</a>
+        <a href="#" class="btn btn-primary">Add to cart</a>
+
+        <!-- function to go to product details page
+        <button class="btn btn-success" (click)="productDetails(product.id)">
+            go to details
+        </button> -->
+
+    </div>
+</div>
