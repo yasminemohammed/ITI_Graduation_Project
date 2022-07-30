@@ -9,7 +9,10 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
+    
+    submitfun(loginform : any) {
+        console.log(loginform);
+    }
 
 }
