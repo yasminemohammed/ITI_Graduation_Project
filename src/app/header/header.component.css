@@ -13,8 +13,23 @@
 @import url('../../assets/css/util.css');
 @import url('../../assets/css/main.css');
 
-body{
-  padding: 0%;
-  margin:0%;
-  box-sizing: border-box;
+a{
+  text-decoration: none;
+  }
+  body{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+  }
+
+.logo{
+ color:#6c7ae0;
+ font-family: Poppins-Regular;
+}
+
+.hh{
+  height:550px;
+}
+.text{
+  color: #6c7ae0;
 }
